@@ -1,0 +1,22 @@
+/* การเข้าไปทำงานที่ตัวลูก
+1. first-child
+2. last-child 
+3. nth-child() ระบุที่ลูกคนที่เท่าไหร่ก็ได้ นับจากบนลงล่าง
+4. nth-last-child() ระบุที่ลูกคนที่เท่าไหร่ก็ได้ นับจากล่างขึ้นบน*/
+li{
+    padding: 0.25rem;
+    margin: 0.25rem;
+    list-style: none;
+}
+li:first-child{
+    background-color: red;
+}
+li:last-child{
+    background-color: blueviolet;
+}
+li:nth-child(3){
+    background-color: aquamarine;
+}
+li:nth-last-child(3){
+    background-color: orange;
+}
