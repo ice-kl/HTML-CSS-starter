@@ -1,0 +1,18 @@
+p{
+    background-color: orange;
+}
+/*
+descendent selector
+การเข้าไปแก้ไขเฉพาะ tag p ที่อยู่ใน div ทั้งหมด
+*/
+div p{
+    background-color: aqua;
+}
+
+/*
+child selector
+การเข้าไปแก้ไขเฉพาะ tag p ที่อยู่ใน div เท่านั้น ไม่เอา tag p ที่เป็นหลาน
+*/
+div>p{
+    background-color: yellow;
+}
