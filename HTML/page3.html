@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page3</title>
+    <style>
+        div{
+            border: 2px solid red;
+        }
+        span{
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>P3</h1>
+    <!-- 
+        cellpadding="10" ขยายพื้นที่ด้านใน cell 10 ส่วน 
+        cellspacing="5" ขยายพื้นที่ด้านอก cell 5 ส่วน
+    -->
+    <table border="1" bgcolor="pink" cellpadding="10" cellspacing="5">
+        <!-- Head table -->
+        <thead>
+            <th>Picture</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Buy</th>
+        </thead>
+        <tbody align="center">
+            <!-- tr = roll -->
+            <!-- roll1 -->
+            <tr bgcolor="yellow" align="right">
+                <td>
+                    <img src="https://onedollaronly.com.sg/cdn/shop/products/OD-11020-E1.jpg?v=1611309890" alt="pen" width="200px" height="200px">
+                </td>
+                <td>Pen</td>
+                <td>15.00</td>
+                <!-- rowspan="2" คือ merge 2 rolls เข้าด้วยกัน -->
+                <td rowspan="2">
+                    <a href="#">สั่งซื้อ</a>
+                </td>
+            </tr>
+            <!-- roll2 -->
+            <tr>
+                <td>
+                    <img src="https://musgravepencil.com/cdn/shop/products/Havest_CedarPencil_1024x1024@2x.jpg?v=1576593212" alt="Pencil" width="200px" height="200px">
+                </td>
+                <td>Pencil</td>
+                <td>5.00</td>
+            </tr>
+            <!-- roll3 -->
+            <tr></tr>
+            <!-- roll4 -->
+            <tr></tr>
+        </tbody>
+        <tfoot align="center">
+            <tr>
+                 <!-- colspan="2" คือ merge 2 collumns เข้าด้วยกัน -->
+                <td colspan="2">Total Price</td>
+                <td></td>
+                <td>500.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <span>Lorem ipsum dolor sit amet.</span> <!--จัดกลุ่มข้อมูลเป็นกลุ่มเดียวกัน -->
+    <span>Lorem ipsum dolor sit amet.</span>
+    <span>Lorem ipsum dolor sit amet.</span>
+    <span style="color: brown;">
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor sit.</p>
+    </span>
+    <div>Lorem ipsum dolor sit amet.</div> <!--จัดกลุ่มข้อมูลเป็นกลุ่มเดียวกัน โดยจะขึ้นบรรทัดใหม่-->
+    <div>Lorem ipsum dolor sit amet.</div> 
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div style="color: brown;">
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+</body>
+</html>

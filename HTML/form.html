@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        form{
+            border: 1px solid blue;
+        }
+        input{
+            border: 2px solid gold;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Form Register</h1>
+    <form action="">
+        <div>
+            <label for="firstname">Firstname</label>
+            <input type="text" name="fname" placeholder="Enter your firstname" required>
+        </div>
+        <div>
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lname" placeholder="Enter your lastname">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter your Email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter your password">
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <textarea name="" id="" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" min="0" max="70" value="18" readonly>
+        </div>
+        <div>
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday">
+        </div>
+        <div>
+            <label for="telephone">Telephone no.</label>
+            <input type="tel" name="telephone">
+        </div>
+        <div>
+            <label for="color">Color</label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label for="range">Range no.</label>
+            <input type="range" name="range" value="1">
+        </div>
+        <div>
+            <label for="edu">Educated</label>
+            <select name="edu" id="">
+                <option value="dipoma">Dipoma</option>
+                <option value="bachelor" selected>Bachelor</option>   <!-- selected คือเลืกเป็นค่าเริ่มต้นเหมือน value -->
+                <option value="doctor">Doctor</option>
+            </select>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+        <div>
+            <label for="favorite">Favorite</label>
+            <input type="checkbox" name="fav"> Book
+            <input type="checkbox" name="fav"> Music
+            <input type="checkbox" name="fav"> Sleep
+        </div>
+        <div>
+            <label for="attach">Attach</label>
+            <input type="file" name="attach"> 
+        </div>
+        <div>
+            <label for="url">url</label>
+            <input type="url" name="url"> 
+        </div>
+        <div> 
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    <span style="border: 1px solid red;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quos illo id perferendis ullam officia, aliquid corporis ex culpa? Earum?</span>
+</body>
+</html>
