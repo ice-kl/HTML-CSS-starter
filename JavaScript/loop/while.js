@@ -1,7 +1,13 @@
-let count = 1;
+// While ใช้ในกรณีที่ไม่รู้จำนวนรอบ
+
+let count = 1; // จำนวนนับรอบ
 
 // เงื่อนไขเป็นจริง
 while(count<=3){
     //ทำอะไร
-    console.log("Hello World")
+    console.log("ผลิตสินค้าชิ้นที่ = ",count); //1,2,3
+    if(count==3){
+        break;
+    }
+    count++; //1->2, 2->3, 3->4(false)  การเพิ่มค่าทีละ 1
 }

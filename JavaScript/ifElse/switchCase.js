@@ -1,4 +1,4 @@
-let status = -1; // 0 ปิดไฟ 1 เปิดไฟ
+let status = 1; // 0 ปิดไฟ 1 เปิดไฟ
 
 let light;
 // if(status==0){
