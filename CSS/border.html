@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and Border-readius</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+        }
+        .box-1{
+            background-color: bisque;
+            border: solid orangered; /*เส้นขอบแบบทึบ*/
+            border-top-width: 10px;  /*ขนาดเส้นขอบ*/
+            border-left-width: 8px;  /*ขนาดเส้นขอบ*/
+            border-top-left-radius: 20px;  /*ความโค้งมนของเส้นขอบ*/
+        }
+        .box-2{
+            background-color: rgb(234, 108, 234);
+            border: dotted 5px green;  /*เส้นขอบแบบจุด*/
+            border-radius: 10px 20px 30px 40px;  /*ความโค้งมนของเส้นขอบ 10px=มุมบนซ้าย 20px=มุมบนขวา 30px=มุมล่างขวา 40px=มุมล่างซ้าย*/
+        }
+        .box-3{
+            background-color: aquamarine;
+            border: dashed 5px blue;  /*เส้นขอบแบบเส้นปะ*/
+        }
+        .box-4{
+            background-color: orange;
+            border: solid 5px;
+            border-radius: 20px; /*ความโค้งมนของเส้นขอบ*/
+            border-top-color: darkmagenta;
+            border-left-color: rgb(93, 149, 38);
+            border-right-color: red;
+            border-bottom-color: blue;
+        }
+        /* กำหนดรูปแบบเส้นขอบอย่างเดียว */
+        .box-5{
+            background-color: rgb(243, 214, 214);
+            border-style: double;
+            border-color: red;
+            border-width: 5px;
+        }
+        /* กำหนดเส้นขอบในแต่ละมุม */
+        .box-6{
+            background-color: khaki;
+            border-top-style: solid;
+            border-left-style: dotted;
+            border-right-style: dashed;
+            border-bottom-style: double;
+            border-top-color: darkmagenta;
+            border-left-color: rgb(93, 149, 38);
+            border-right-color: red;
+            border-bottom-color: blue;
+            border-top-width: 5px; /*ขนาดเส้นขอบ*/
+            border-bottom-width: 10px; /*ขนาดเส้นขอบ*/
+        }
+        img{
+            width: 300px;
+            height: auto;
+            border: dotted 5px palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.Box-1 -->
+    <div class="box-1"></div>
+    <hr>
+    <div class="box-2"></div>
+    <hr>
+    <div class="box-3"></div>
+    <hr>
+    <div class="box-4"></div>
+    <hr>
+    <div class="box-5"></div>
+    <hr>
+    <div class="box-6"></div>
+    <hr>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Adult_Scottish_Fold.jpg/800px-Adult_Scottish_Fold.jpg">
+</body>
+</html>

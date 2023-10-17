@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        *{
+            box-sizing: border-box;  /*ให้ทุก box คำนวณค่าจริงรวม margin, padding*/
+        }
+        img{
+            width: 150px;
+        }
+        .box-1 img{
+            float: right;
+        }
+        .box-2 img{
+            float: left;
+        }
+        .container{
+            width: 960px;
+            margin: 30px auto;
+        }
+        body{
+            line-height: 1.4em;
+        }
+        .box{
+            border: 1px solid;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        #box-2{
+            float: left;
+            width: 70%;
+        }
+        #box-3{
+            float: right;
+            width: 30%;
+        }
+        .clr{
+            clear: both;  /*ไม่ให้ element ที่อยู่ระหว่างคำสั่งนี้ลอยมารวมกันทั้งสองด้านซ้าย-ขวา*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        <p>
+            <img src="image/Shin-chan-friend.jpg" alt="">
+            Crayon Shin-chan is a Japanese manga series written and illustrated by Yoshito Usui. Crayon Shin-chan made its first appearance in 1990 in a Japanese
+        </p>
+    </div>
+    <div class="box-2">
+        <p>
+            <img src="image/3c76a6f1.png" alt="">
+            Lucky in the Vitello, Phuuz and Dutch dubs, and Whitey in the Funimation
+        </p>
+    </div>
+    <div class="clr"></div>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h1>Title 1</h1>
+            <p>This article needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.</p>
+        </div>
+        <div id="box-2" class="box">
+            <h1>Title 2</h1>
+            <p>This section needs additional citations for verification. Please help improve this article by adding citations to reliable sources in this section. Unsourced material may be challenged and removed.</p>
+        </div>
+        <div id="box-3" class="box">
+            <h1>Title 3</h1>
+            <p>Voiced by: Akiko Yajima (1992-2018), Yumiko Kobayashi (2018-present), Kath Soucie (English, Vitello dub), Laura Bailey (English, Funimation dub)
+                He is the main character, son of Hiroshi and Misae.</p>
+        </div>
+    </div>
+</body>
+</html>

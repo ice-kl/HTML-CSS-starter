@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-image: url('image/3c76a6f1.png');
+            background-repeat: no-repeat;  /*กำหนดไม่ให้ repeat รูป (x-repeat=repeat เฉพาะแกน x, y-repeat=repeat เฉพาะแกน y)*/
+            background-attachment: fixed;  /*fixed พื้นหลังไม่ให้ขยับเวลาเลื่อน*/
+            background-position: center;  /*กำหนด position ให้กับพื้นหลัง*/
+        }
+        div{
+            border: dashed 2px rgb(0, 26, 255);
+            margin-top: 10px;  /*กำหนดระยะห่างจากเส้นขอบกับข้างนอก*/
+            margin-bottom: 20px;
+            background-color: white;
+        }
+        .box-1{
+            width: 500px;
+            height: 200px;
+            margin-left: 20px;
+            padding-top: 10px;
+            background: url('image/Shin-Chan.png') center;
+            background-size: contain;
+        }
+        .box-2{
+            margin-right: 30px;
+            padding: 20px;  /*กำหนดระยะห่างจากเนื้อหากับเส้นขอบ*/
+        }
+        .box-3{
+            margin: 5px 10px 15px 20px;  /*top right bottom left*/
+            padding: 10px 15px 20px 25px;
+        }
+        .box-4{
+            padding: 20px 10px;  /*20px = top,bottom  10px = right,left*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        This course breaks down the fundamentals of CSS into digestible, easy to understand pieces. Over the next few modules, you'll learn how the core aspects of CSS work and how to use them effectively in your projects. Use the menu pane by the "Learn CSS" logo to navigate the modules.
+    </div>  
+    <div class="box-2">
+        You'll learn CSS fundamentals like the box model, cascade and specificity, flexbox, grid and z-index. And, along with these fundamentals, you'll learn about functions, color types, gradients, logical properties and inheritance to make you a well-rounded front-end developer, ready to take on any user interface.
+    </div>  
+    <div class="box-3">
+        Each module is full of interactive demos and self-assessments for you to test your knowledge. In addition to learning through reading and demos, there is an accompanying podcast episode for each topic as another way to learn and continue expanding your knowledge.
+    </div>  
+    <div class="box-4">
+        This course is created for beginner and advanced CSS developers alike. You can go through the series from start to finish to get a general understanding of CSS from top to bottom, or you can use it as a reference for specific styling subjects. For those new to web development overall, check out Learn HTML to learn all about how to write markup and link your stylesheets.
+    </div>   
+     
+</body>
+</html>
